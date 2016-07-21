@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain" >
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_control_layout_fragment_turnouts"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar"
+        android:weightSum="2" >
+
+        <fragment
+            class="uk.tomhomewood.android.jmricontroller.fragments.FragmentThrottleStandard"
+            android:id="@+id/activity_control_layout_fragment_throttle_1"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_throttle" />
+
+        <fragment
+            class="uk.tomhomewood.android.jmricontroller.fragments.FragmentThrottleStandard"
+            android:id="@+id/activity_control_layout_fragment_throttle_2"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_throttle" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/activity_control_layout_fragment_turnouts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/turnouts_list_height"
+        android:layout_alignParentBottom="true"
+        class="uk.tomhomewood.android.jmricontroller.fragments.FragmentTurnoutsList"
+        tools:layout="@layout/fragment_turnouts_list" />
+
+</RelativeLayout>

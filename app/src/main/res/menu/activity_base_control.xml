@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item android:id="@+id/action_emergency_stop"
+        android:icon="@drawable/ic_emergency_stop"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:title="@string/emergency_stop" />
+
+    <item
+        android:id="@+id/action_layout_power_on"
+        android:icon="@drawable/ic_action_menu_power_off"
+        android:orderInCategory="10"
+        app:showAsAction="always"
+        android:title="@string/label_power_on"/>
+    <item
+        android:id="@+id/action_layout_power_off"
+        android:icon="@drawable/ic_action_menu_power_on"
+        android:orderInCategory="10"
+        app:showAsAction="always"
+        android:title="@string/label_power_off"/>
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

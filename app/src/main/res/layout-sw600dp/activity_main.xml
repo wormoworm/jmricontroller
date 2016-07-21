@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain">
+
+    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/include_activity_main_auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/activity_main_manual_wrapper"/>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_main_manual_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            layout="@layout/include_activity_main_manual"
+            android:background="@color/_555555" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="autoConnectToFirstLayout"
+        android:summaryOn="@string/auto_connect_to_first_layout_summary_on"
+        android:summaryOff="@string/auto_connect_to_first_layout_summary_off"
+        android:title="@string/auto_connect_to_first_layout_title" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="keepScreenOn"
+        android:summaryOn="@string/keep_screen_on_summary_on"
+        android:summaryOff="@string/keep_screen_on_summary_off"
+        android:title="@string/keep_screen_on_title" />
+    
+
+</PreferenceScreen>

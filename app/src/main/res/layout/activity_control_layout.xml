@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain" >
+
+    <include layout="@layout/toolbar" />
+
+    <fragment
+        android:id="@+id/activity_control_layout_fragment_turnouts"
+        android:layout_width="@dimen/turnouts_list_item_width"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        class="uk.tomhomewood.android.jmricontroller.fragments.FragmentTurnoutsList"
+        tools:layout="@layout/fragment_turnouts_list" />
+
+    <uk.tomhomewood.android.jmricontroller.customviews.TouchViewPager
+        android:id="@+id/activity_control_layout_fragment_throttle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/activity_control_layout_fragment_turnouts"
+        android:layout_toRightOf="@+id/activity_control_layout_fragment_turnouts" />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="label_no_layouts_found">No layouts found. Use the panel to the right to connect manually.</string>
+</resources>

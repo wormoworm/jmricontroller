@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="turnouts_grid_width">222dp</dimen>
+    <integer name="activity_choose_locomotive_num_columns">2</integer>
+
+</resources>

@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smart="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/activity_choose_locomotive_item_size"
+    android:layout_height="@dimen/activity_choose_locomotive_item_size"
+    android:background="@drawable/choose_loco_grid_selector"
+    android:padding="5dp" >
+
+   <uk.tomhomewood.android.jmricontroller.customviews.TurnoutIndicatorView 
+       android:layout_height="100dp"
+       android:layout_width="100dp"/>
+
+</RelativeLayout>

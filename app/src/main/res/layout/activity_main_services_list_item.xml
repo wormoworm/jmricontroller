@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/files_list_item_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0.54"
+        android:src="@drawable/ic_layout" />
+
+    <TextView
+        android:id="@+id/activity_main_services_list_item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/files_list_item_icon"
+        android:text="Model railway"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/activity_main_services_list_item_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_main_services_list_item_name"
+        android:layout_below="@+id/activity_main_services_list_item_name"
+        android:text="192.168.1.2"
+        android:textAppearance="?attr/textAppearanceListItemSmall" />
+
+</RelativeLayout>

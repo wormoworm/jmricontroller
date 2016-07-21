@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JMRI Controller</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_done">Done</string>
+    <string name="title_choose_locomotive">Choose locomotive</string>
+    <string name="title_preferences">Settings</string>
+    <string name="title_landscape_throttle">Landscape Throttle</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_turnouts">Turnouts</string>
+    <string name="title_layouts">Layouts</string>
+
+    <string name="label_power_on">Power on</string>
+    <string name="label_power_off">Power off</string>
+    <string name="label_preferences_summary_basic">Controller name, heartbeat#8230;</string>
+    <string name="title_preferences_title_basic">Basic</string>
+    <string name="text_preference_controller_name_text">The name of this controller, which is shown in WiThrottle.</string>
+    <string name="title_preference_controller_name_title">Controller name</string>
+    <string name="title_manual_connect">Manual connect</string>
+    <string name="title_connect">Connect</string>
+    <string name="label_address">Address</string>
+    <string name="label_port">Port</string>
+    <string name="label_no_layouts_found">No layouts found. Touch the button below to connect manually.</string>
+    <string name="label_release">Release</string>
+    <string name="full_screen_throttle">Full screen</string>
+    <string name="emergency_stop">Emergency stop</string>
+    
+    <string name="no_locomotive_selected">No locomotive selected</string>
+    
+    <string name="error_throttle_number_invalid">Throttle number invalid</string>
+    <string name="error_connection_failed">Connection failed</string>
+    
+    <string name="settings_header_connection">Connection</string>
+    <string name="settings_header_throttle">Throttle</string>
+
+    <string name="auto_connect_to_first_layout_title">Auto connect</string>
+    <string name="auto_connect_to_first_layout_summary_on">JMRI Controller will automatically connect to the first layout discovered.</string>
+    <string name="auto_connect_to_first_layout_summary_off">JMRI Controller will connect when a layout is chose.n</string>
+
+    <string name="keep_screen_on_title">Keep screen on</string>
+    <string name="keep_screen_on_summary_on">Your device\'s screen will stay on whilst you are connected to a layout.</string>
+    <string name="keep_screen_on_summary_off">Your device\'s screen will turn off automatically, even when connected to a layout.</string>
+    
+    <string name="show_all_functions_title">Show all functions</string>
+    <string name="show_all_functions_summary_on">All functions will be shown.</string>
+    <string name="show_all_functions_summary_off">Only labelled functions will be shown.</string>
+    
+    <string name="show_emergency_stop_button_title">Show emergency stop button</string>
+    <string name="show_emergency_stop_button_summary_on">The emergency stop button will be shown in the app bar.</string>
+    <string name="show_emergency_stop_button_summary_off">The emergency stop button will not be shown in the app bar.</string>
+    <string name="choose_layout">Choose layout</string>
+    <string name="found">found</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="model">Model</string>
+    <string name="owner">Owner</string>
+    <string name="dcc_address">DCC address</string>
+    <string name="title_locomotive_info">Locomotive info</string>
+    <string name="info">Info</string>
+    <string name="change">Change</string>
+
+    <plurals name="layouts">
+        <item quantity="one">layout</item>
+        <item quantity="other">layouts</item>
+    </plurals>
+</resources>

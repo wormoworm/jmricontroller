@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="screen_type">@integer/tablet_small</integer>
+    <integer name="activity_choose_locomotive_num_columns">2</integer>
+
+</resources>

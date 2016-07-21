@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/activity_landscape_throttle_throttle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_throttle" />
+
+    <RelativeLayout
+        android:id="@+id/activity_landscape_throttle_turnouts"
+        android:layout_width="@dimen/turnouts_grid_width"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

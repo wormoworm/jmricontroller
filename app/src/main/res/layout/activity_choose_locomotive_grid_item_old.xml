@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/choose_locomotive_grid_item_height"
+    android:background="@drawable/choose_loco_grid_selector"
+    android:padding="4dp" >
+
+    <uk.tomhomewood.android.jmricontroller.customviews.SquareImageView
+        android:id="@+id/activity_choose_locomotive_grid_item_image"
+        android:layout_width="@dimen/choose_locomotive_grid_item_height"
+        android:layout_height="@dimen/choose_locomotive_grid_item_height"
+        android:adjustViewBounds="false"
+        android:background="@color/_FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@drawable/loco_default" />
+
+    <TextView
+        android:id="@+id/activity_choose_locomotive_grid_item_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/activity_choose_locomotive_grid_item_image"
+        android:text="14701"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/activity_choose_locomotive_grid_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_choose_locomotive_grid_item_number"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/activity_choose_locomotive_grid_item_image"
+        android:text="Class 14 no. 701"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

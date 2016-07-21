@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_throttle_locomotive_info_width"
+    android:layout_height="wrap_content"
+    android:background="@color/_FFFFFF"
+    android:paddingBottom="8dp" >
+
+    <ImageView
+        android:id="@+id/dialog_throttle_locomotive_info_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_throttle_locomotive_info_image_height"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/dialog_throttle_locomotive_info_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dialog_throttle_locomotive_info_image"
+        android:layout_marginLeft="8dp"
+        android:background="@color/_FFFFFF"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/text_size_very_large" />
+
+    <TextView
+        android:id="@+id/dialog_throttle_locomotive_info_model"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dialog_throttle_locomotive_info_number"
+        android:layout_marginLeft="16dp"
+        android:background="@color/_FFFFFF"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:textColor="@color/_333333"
+        android:textSize="@dimen/text_size_very_small" />
+
+    <Button
+        android:id="@+id/dialog_throttle_locomotive_info_button_release"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_throttle_locomotive_info_model"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="@string/label_release"
+        android:textColor="@color/_FFFFFF"
+        android:textSize="@dimen/text_size_medium" />
+
+</RelativeLayout>

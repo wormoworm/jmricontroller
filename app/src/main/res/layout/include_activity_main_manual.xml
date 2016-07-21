@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main_manual"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/activity_main_layouts_heading_manual"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/title_manual_connect"
+        android:textAppearance="@style/TextAppearance.ListSubheader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_address"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <AutoCompleteTextView
+        android:id="@+id/activity_main_manual_connection_address"
+        style="@style/EditTextInput"
+        android:digits="0123456789."
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:imeOptions="actionNext"
+        android:inputType="number|numberDecimal"
+        android:nextFocusForward="@+id/activity_main_manual_connection_port"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_port"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <AutoCompleteTextView
+        android:id="@+id/activity_main_manual_connection_port"
+        style="@style/EditTextInput"
+        android:imeOptions="actionGo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:id="@+id/activity_main_button_connect"
+        style="@style/ButtonLarge"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/title_connect"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smart="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fragment_throttle_functions_grid_item_label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_throttle_functions_grid_item_height"
+        android:background="@drawable/function_button_background"
+        android:gravity="top|center_horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:text="Lights"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/function_button_text_color"/>
+    <!--
+        <TextView
+            android:id="@+id/fragment_throttle_functions_grid_item_indicator"
+            android:layout_width="@dimen/fragment_throttle_functions_grid_item_indicator_size"
+            android:layout_height="@dimen/fragment_throttle_functions_grid_item_indicator_size"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/function_indicator" />
+    -->
+</RelativeLayout>

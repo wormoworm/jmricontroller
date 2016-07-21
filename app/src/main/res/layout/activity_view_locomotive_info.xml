@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <uk.tomhomewood.android.jmricontroller.customviews.FixedAspectRatioRelativeLayout
+        android:id="@+id/activity_view_locomotive_info_image_wrapper"
+        app:aspect_ratio="1.4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_view_locomotive_info_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop" />
+
+        </uk.tomhomewood.android.jmricontroller.customviews.FixedAspectRatioRelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_view_locomotive_info_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_view_locomotive_info_image_wrapper"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="14 701"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_view_locomotive_info_number"
+        android:layout_marginLeft="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/activity_view_locomotive_info_manufacturer_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manufacturer"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/activity_view_locomotive_info_manufacturer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heljan"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_view_locomotive_info_model_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/model"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/activity_view_locomotive_info_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class 14 no. 701"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_view_locomotive_info_owner_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/owner"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/activity_view_locomotive_info_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tom Homewood"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_view_locomotive_info_address_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dcc_address"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/activity_view_locomotive_info_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1470"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/activity_view_locomotive_info_image_wrapper"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-28dp"
+        android:src="@drawable/ic_manual_connect"
+        fab:fab_colorNormal="@color/accent"
+        fab:fab_colorPressed="@color/accent_light"
+        fab:fab_colorRipple="@color/accent" />
+
+</RelativeLayout>

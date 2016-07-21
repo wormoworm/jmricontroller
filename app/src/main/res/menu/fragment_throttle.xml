@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<!--    <item
+        android:id="@+id/action_full_screen_throttle"
+        android:icon="@android:drawable/ic_menu_always_landscape_portrait"
+        android:orderInCategory="5"
+        android:showAsAction="always"
+        android:title="@string/full_screen_throttle" />
+-->
+</menu>

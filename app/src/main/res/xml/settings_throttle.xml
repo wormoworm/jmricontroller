@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="showAllFunctions"
+        android:summaryOff="@string/show_all_functions_summary_off"
+        android:summaryOn="@string/show_all_functions_summary_on"
+        android:title="@string/show_all_functions_title" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="showEmergencyStopButton"
+        android:summaryOff="@string/show_emergency_stop_button_summary_off"
+        android:summaryOn="@string/show_emergency_stop_button_summary_on"
+        android:title="@string/show_emergency_stop_button_title" />
+
+</PreferenceScreen>

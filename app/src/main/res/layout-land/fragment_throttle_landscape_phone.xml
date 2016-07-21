@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smart="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_FFFFFF"
+    tools:context=".ActivityMain" >
+
+    <uk.tomhomewood.android.jmricontroller.customviews.SquareImageView
+        android:id="@+id/fragment_throttle_loco_image"
+        android:layout_width="@dimen/turnouts_grid_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/choose_loco_grid_selector"
+        android:padding="8dp" />
+
+    <uk.tomhomewood.android.jmricontroller.customviews.TouchGridView
+        android:id="@+id/fragment_throttle_functions_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_throttle_direction_control"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/fragment_throttle_speed_control"
+        android:layout_toRightOf="@+id/fragment_throttle_loco_image"
+        android:background="@null"
+        android:choiceMode="none"
+        android:columnWidth="@dimen/fragment_throttle_functions_grid_item_width"
+        android:descendantFocusability="beforeDescendants"
+        android:horizontalSpacing="2dp"
+        android:numColumns="auto_fit"
+        android:overScrollMode="never"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp"
+        tools:listitem="@layout/fragment_throttle_functions_grid_item" />
+
+    <uk.tomhomewood.android.jmricontroller.customviews.SpeedControlView
+        android:id="@+id/fragment_throttle_speed_control"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:padding="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_throttle_no_loco_selected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/_FFFFFF"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/fragment_throttle_no_loco_selected_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/title_choose_locomotive" />
+    </RelativeLayout>
+
+    <uk.tomhomewood.android.jmricontroller.customviews.DirectionControlView
+        android:id="@+id/fragment_throttle_direction_control"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/fragment_throttle_speed_control"
+        android:layout_alignLeft="@+id/fragment_throttle_functions_grid" />
+
+</RelativeLayout>

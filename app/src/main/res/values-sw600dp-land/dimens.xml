@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="turnouts_list_height">300dp</dimen>
+    <dimen name="turnouts_grid_margin_right">1dp</dimen>
+
+</resources>

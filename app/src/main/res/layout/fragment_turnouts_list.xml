@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ActivityMain" >
+
+    <TextView
+        android:id="@+id/fragment_turnouts_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/title_turnouts"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:gravity="bottom|left"
+        android:textColor="@color/accent"
+        android:layout_marginRight="@dimen/turnouts_grid_spacing"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"/>
+
+    <GridView
+        android:id="@+id/fragment_turnouts_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_turnouts_list_title"
+        android:layout_marginRight="@dimen/turnouts_grid_margin_right"
+        android:columnWidth="@dimen/turnouts_list_item_width"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/turnouts_grid_spacing"
+        android:horizontalSpacing="@dimen/turnouts_grid_spacing"
+        tools:listitem="@layout/fragment_turnouts_list_item" />
+
+</RelativeLayout>
